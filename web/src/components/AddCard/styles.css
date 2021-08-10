@@ -1,0 +1,36 @@
+.add-card-component {
+  width: 100%;
+  height: 192px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  background-color: var(--bg-color-add-card);
+
+  cursor: pointer;
+
+  transition: 150ms;
+}
+
+.add-card-component:hover {
+  filter: brightness(0.95);
+}
+
+.add-card-component .elipse {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-card-component p {
+  text-align: center;
+}
