@@ -1,0 +1,28 @@
+.button-add-participants {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-color-add-card);
+
+  transition: 200ms;
+
+  cursor: pointer;
+}
+
+.button-add-participants:hover {
+  opacity: 0.75;
+}
+
+.button-add-participants .icon {
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  padding: 3px;
+}

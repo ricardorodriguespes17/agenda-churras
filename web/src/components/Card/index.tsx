@@ -3,7 +3,7 @@ import ParticipantsIcon from "../ParticipantsIcon";
 import "./styles.css";
 
 interface CardProps {
-  date: string;
+  date: number;
   title: string;
   participants: number;
   money: number;

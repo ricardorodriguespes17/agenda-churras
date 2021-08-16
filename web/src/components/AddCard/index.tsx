@@ -1,9 +1,13 @@
 import ChurrasIcon from "../ChurrasIcon";
 import "./styles.css";
 
-function AddCard() {
+interface AddCardProps {
+  onClick: () => void;
+}
+
+function AddCard({ onClick }: AddCardProps) {
   return (
-    <div className="add-card-component">
+    <div className="add-card-component" onClick={() => onClick()}>
       <div className="elipse">
         <ChurrasIcon />
       </div>

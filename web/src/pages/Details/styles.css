@@ -24,12 +24,75 @@
   z-index: 5;
 }
 
+.details-page .churras-details .actions-header {
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.details-page .churras-details .actions-header button {
+  background-color: transparent;
+  color: var(--primary-color-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: fit-content;
+  height: 30px;
+
+  flex: 1;
+
+  font-size: 20px;
+
+  transition: 200ms;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.details-page .churras-details .actions-header button:hover {
+  color: var(--primary-color-dark);
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.details-page .churras-details .actions-header button.button-delete:hover {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+
+.details-page .churras-details .actions-header button:hover label {
+  width: 70px;
+  transition: 500ms;
+}
+
+.details-page .churras-details .actions-header button label {
+  width: 0;
+  font-size: 16px;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
 .details-page .churras-details .header {
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
+
+  padding-bottom: 20px;
+}
+
+.details-page .churras-details .header .header-observations {
+  opacity: 0.8;
+  font-size: 12px;
 }
 
 .details-page .churras-details .header h1 {
@@ -54,7 +117,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-top: 40px;
+  margin-top: 10px;
 
   gap: 10px;
 }

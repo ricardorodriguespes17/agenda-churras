@@ -1,11 +1,12 @@
 .default-theme {
   --primary-color: #ffd836;
+  --primary-color-dark: #998220;
   --secondary-color: #fff;
   --bg-color: #fafafa;
   --bg-color-add-card: #f1f1f1;
   --text-color: #000;
   --button-color: #000;
   --button-text-color: #fff;
-  --border-color: #998220;
   --border-color-light: rgba(229, 193, 49, 0.5);
+  --danger-color: #a40000;
 }

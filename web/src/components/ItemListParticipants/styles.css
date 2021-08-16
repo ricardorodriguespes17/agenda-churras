@@ -16,7 +16,7 @@
   height: 25px;
 
   border-radius: 50%;
-  border: 3px solid var(--border-color);
+  border: 3px solid var(--primary-color-dark);
 }
 
 .item-list-participants .select-button.selected {
@@ -31,4 +31,26 @@
 .item-list-participants p {
   opacity: 0.8;
   font-size: 21px;
+}
+
+.item-list-participants .actions {
+  width: fit-content;
+  display: flex;
+}
+
+.item-list-participants .actions button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+
+  background-color: transparent;
+
+  transition: 150ms;
+
+  cursor: pointer;
+}
+
+.item-list-participants .actions button:hover {
+  opacity: 0.8;
+  color: var(--primary-color-dark);
 }

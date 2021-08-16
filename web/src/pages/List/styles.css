@@ -11,9 +11,10 @@
 
 .list-page .churras-list {
   display: grid;
-  grid-template-columns: repeat(2, 282px);
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+
+  width: 50%;
 
   margin-top: -40px;
 
