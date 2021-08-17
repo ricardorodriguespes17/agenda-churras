@@ -1,4 +1,4 @@
-# Agenda Churras 💲
+# Agenda Churras 📅
 
 O objetivo desse projeto é gerenciar os eventos de churrascos.
 
