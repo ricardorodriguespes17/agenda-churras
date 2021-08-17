@@ -29,8 +29,9 @@ O usuário poderá criar um novo evento com um nome, data, descrição, valor su
 Aplicação frontend desenvolvida com o framework [ReactJS](https://pt-br.reactjs.org) com [Typescript](https://www.typescriptlang.org).
 
 Usando também as bibliotecas 
-- [React Icons](https://react-icons.github.io/react-icons/search) para uso de icones
-- [Axios](https://axios-http.com) para fazer chamadas às APIs.
+- [React Icons](https://react-icons.github.io/react-icons/search) para uso de icones.
+- [Redux](https://redux.js.org) para gerenciamento do estado global da aplicação.
+- [React Redux](https://react-redux.js.org) para ligar o Redux ao React.
 
 ### 📁 Pastas
 
@@ -40,6 +41,8 @@ A organização da pasta "src" se deu usando um padrão de pastas que uso, onde
   - 📂 "src/styles" ficam folhas de estilização (css) padrões da aplicação como estilos e cores padrões.
   - 📂 "src/utils" ficam funções que podem ser utilizadas em mais de uma tela ou componente;
   - 📂 "src/tests" ficam funções para testar algumas outras funções da aplicação;
+  - 📂 "src/store" ficam os arquivos da store, actions e reducers do Redux.
+  - 📂 "src/types" fica o arquivo com as interfaces do projeto para Typescript.
 
 Cada página ou componente tem uma pasta com o seu nome, contendo 
   - 📎 um arquivo tsx, para renderização do componente;
