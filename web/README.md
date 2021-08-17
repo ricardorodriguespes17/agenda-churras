@@ -65,10 +65,6 @@ npm start
 
 A aplicação rodará se possível em 🌐 http://localhost:3000.
 
-## Backend em construção
-
-Loading...
-
 ## 🚀 Aprenda mais sobre React
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
