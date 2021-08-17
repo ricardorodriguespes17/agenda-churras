@@ -1,45 +1,71 @@
-# Getting Started with Create React App
+# Agenda Churras 📅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O objetivo desse projeto é gerenciar os eventos de churrascos.
 
-## Available Scripts
+## 📝 Detalhes
 
-In the project directory, you can run:
+O usuário poderá criar um novo evento com um nome, data, descrição, valor sugerido por pessoa e os participantes.
 
-### `yarn start`
+### ▶️ Operações básicas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Adicionar um novo churras;
+2. Visualizar lista com todos os churras;
+3. Visualizar detalhes do churras;
+4. Editar um churras;
+5. Remover um churras;
+6. Adicionar um participante;
+7. Remover um participante;
+ 
+### 📱 Detalhes da tela
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- A tela inicial é uma lista com cards representando cada churras, mostrando data, nome, valor arrecadado e número de participantes;
+  - Um card adicional serve para adicionar um novo churras;  
+- A tela de detalhes mostra um coluna com informações sobre o churras como nome, data, valor arrecadado, número de participantes;
+  - Abaixo aparece uma lista de participantes, com o nome, valor que irá pagar, um botão para abrir a edição e outro para remover participante;
+  - No topo da coluna aparece botões com função de voltar para tela inicial, editar churras e deletar churras;
 
-### `yarn test`
+## 🔨 Desenvolvimento
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplicação frontend desenvolvida com o framework [ReactJS](https://pt-br.reactjs.org) com [Typescript](https://www.typescriptlang.org).
 
-### `yarn build`
+Usando também as bibliotecas 
+- [React Icons](https://react-icons.github.io/react-icons/search) para uso de icones
+- [Axios](https://axios-http.com) para fazer chamadas às APIs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📁 Pastas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A organização da pasta "src" se deu usando um padrão de pastas que uso, onde
+  - 📂 "src/components" ficam os componentes isolados utilizados na(s) página(s) da aplicação.
+  - 📂 "src/pages" ficam as páginas principais da aplicação.
+  - 📂 "src/styles" ficam folhas de estilização (css) padrões da aplicação como estilos e cores padrões.
+  - 📂 "src/utils" ficam funções que podem ser utilizadas em mais de uma tela ou componente;
+  - 📂 "src/tests" ficam funções para testar algumas outras funções da aplicação;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cada página ou componente tem uma pasta com o seu nome, contendo 
+  - 📎 um arquivo tsx, para renderização do componente;
+  - 📎 um aquivo css, para estilização daquele componente.
 
-### `yarn eject`
+### 🔷 Detalhes dos componentes
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Componentes e página foram desenvolvidos usando o conceito de *functional components*, ou seja, os componentes renderizados são funções javascript.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⬇️ Instalação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Com o código clonado no computador, basta entrar na pasta web e use o seguinte comando para instalar os pacotes 👇
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+Após o termino da instalação, use o seguinte comando para iniciar a aplicação localmente 👇
+
+```
+npm start
+```
+
+A aplicação rodará se possível em 🌐 http://localhost:3000.
+
+## 🚀 Aprenda mais sobre React
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
