@@ -16,6 +16,10 @@ function List() {
 
   const churras = useSelector((store: StoreType) => store.churrasState.churras);
 
+  const participants = useSelector(
+    (store: StoreType) => store.participantsState.participants
+  );
+
   function newChurras() {
     const id = idGenerator(churras);
 
@@ -41,8 +45,14 @@ function List() {
         {churras.map((item) => (
           <Card
             date={item.date}
-            money={item.money}
-            participants={item.numberParticipants}
+            money={participants
+              .filter((participant) => participant.churrasId === item.id)
+              .reduce((p, c) => p + c.value, 0)}
+            participants={
+              participants.filter(
+                (participant) => participant.churrasId === item.id
+              ).length
+            }
             title={item.title}
             onClick={() => history.push(`/churras/${item.id}`)}
           />
